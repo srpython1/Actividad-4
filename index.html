@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabla Avanzada</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alan</td>
+                <td>23</td>
+                <td>Santo Domingo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alicia</td>
+                <td>30</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Juan</td>
+                <td>25</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pedro</td>
+                <td>28</td>
+                <td>Valencia</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Laura</td>
+                <td>35</td>
+                <td>Sevilla</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>María</td>
+                <td>22</td>
+                <td>Bilbao</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Formulario de Encuesta</h1>
+    <form>
+        <label for="nombre">1. Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="email">2. Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label>3. Género:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label>
+
+        <label>4. ¿Qué idiomas hablas? (Selecciona múltiples):</label>
+        <input type="checkbox" id="espanol" name="idiomas" value="espanol">
+        <label for="espanol">Español</label>
+        <input type="checkbox" id="ingles" name="idiomas" value="ingles">
+        <label for="ingles">Inglés</label>
+        <input type="checkbox" id="frances" name="idiomas" value="frances">
+        <label for="frances">Francés</label>
+
+        <label for="pais">5. País de residencia:</label>
+        <select id="pais" name="pais" required>
+            <option value="espana">España</option>
+            <option value="mexico">México</option>
+            <option value="colombia">Colombia</option>
+            <option value="argentina">Argentina</option>
+        </select>
+
+        <label for="comentarios">6. Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+
+        <label>7. Intereses:</label>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label>
+        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+        <label for="tecnologia">Tecnología</label>
+
+        <label for="fecha">8. Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="telefono">9. Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="nivel">10. Nivel educativo:</label>
+        <select id="nivel" name="nivel" required>
+            <option value="secundaria">Secundaria</option>
+            <option value="bachillerato">Bachillerato</option>
+            <option value="universidad">Universidad</option>
+            <option value="posgrado">Posgrado</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
